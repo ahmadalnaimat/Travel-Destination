@@ -5,9 +5,7 @@ import Tours from "../tours/Tours"
 function Home() {
     return(
         <>
-        <Header/>
         <Tours/>
-        <Footer/>
         </>
     )
 }
