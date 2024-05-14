@@ -1,15 +1,15 @@
 import './Tours.css'
+import Tour from './tour/Tour'
 const data= require("../../data/db.json")
 function Tours() {
-    return(
-        data.map(items=>{
-            return(
-            <div key={items.id}>
-                <h3>{items.name}</h3>
-                <img src={items.image} alt="something is wrong"/>
-                <hr/>
-            </div>
-        )})
+    return(     
+        <>
+        <div className="superContainer">
+            {data.map(city => (
+                <Tour id={city.id} name={city.name} image={city.image} />
+        ))}
+        </div>
+        </>    
     )
 }
 export default Tours

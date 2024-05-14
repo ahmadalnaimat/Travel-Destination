@@ -1,0 +1,33 @@
+
+.container-card {
+    background-color: #d1d0d0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    
+}
+  
+  .container-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tour-name {
+    color: black;
+    font-size: 18px;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+  
+  .tour-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .tour-separator {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+  }
